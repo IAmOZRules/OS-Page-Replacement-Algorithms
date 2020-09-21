@@ -15,21 +15,5 @@ In this algorithm, pages are replaced which would not be used for the longest du
 
 ### Sample (Using FIFO): 
 Enter the number of frames: 3
+
 Enter the reference string: 4 7 6 1 7 6 1 2 7 2
-
-String|Frame →	0 1 2  Fault
-   ↓
-
-   4		      4      Yes
-   7		      4 7    Yes
-   6		      4 7 6  Yes
-   1		      1 7 6  Yes
-   7		      1 7 6  No
-   6		      1 7 6  No
-   1		      1 7 6  No
-   2		      1 2 6  Yes
-   7		      1 2 7  Yes
-   2		      1 2 7  No
-
-Total requests: 10
-Total Page Faults: 6
